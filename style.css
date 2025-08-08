@@ -1,0 +1,16 @@
+.carousel-item img {
+     height: 50vh;
+     object-fit: cover;
+
+}
+
+.card-img-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+}
+.card-img {
+    height: 50vh;
+}
