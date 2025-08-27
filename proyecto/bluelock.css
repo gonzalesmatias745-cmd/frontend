@@ -30,3 +30,17 @@
     height: 50vh;
     object-fit: cover;
 }
+
+.pricing{
+    transition: transform 0.3s;
+}
+
+.pricing:hover{
+    transform: scale(1.05);
+}
+
+.liga{
+    border: none;
+    border-left: 4px solid blue;
+    height: 100%;
+}
