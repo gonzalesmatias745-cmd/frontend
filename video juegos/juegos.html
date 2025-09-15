@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="juegos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
@@ -28,7 +29,7 @@
                         <a class="nav-link active" aria-current="page" href="#news">news</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#reseñas">reseñas</a>
+                        <a class="nav-link " aria-current="page" href="#Reseñas">reseñas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="#top-juegos">top juegos</a>
@@ -38,6 +39,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="#suscribete">suscribete</a>
+                    </li>
+                    <li>
+                        <a class="nav-link " aria-current="page" href="#testimonios">testimonios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="#FAQ">FAQ</a>
@@ -58,7 +62,7 @@
         </div>
     </header>
 
-    <section id="news" class="bg-dark container my-5 ">
+    <section id="news" class="bg-dark  ">
         <div class="container py-5">
             <h2 class="section-title text-center">📰Noticias destacadas</h2>
             <div class="row">
@@ -198,7 +202,7 @@
         </div>
     </Section>
 
-    <section id="top-juegos" class="bg-dark text-white my-5 text-center">
+    <section id="top-juegos" class="bg-dark text-white  text-center">
         <div class="container">
             <h2 class="section-title text-center">Top Juegos populares</h2>
             <div class="row">
@@ -349,9 +353,157 @@
         </div>
     </section>
 
+    <section id="suscribete" class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h2 class="section-title">📬Suscríbete a nuestro boletín</h2>
+            <div class="row text-center">
+                <p>Recibe las últimas noticias y actualizaciones directamente en tu correo.</p>
+                <div class="col-md-6 offset-md-3">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bg-black text-white" type="search"
+                            placeholder="Ingresa tu correo" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5 border-secondary">
+    </section>
+    <section id="testimonios" class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h2 class="section-title">🗨️Lo que dicen nuestros lectores</h2>
+            <div class="row ">
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-secondary">
+                        <div class="card-body">
+                            <p class="card-text text-white">"Este sitio es increíble. He aprendido mucho sobre
+                                videojuegos."</p>
+                            <footer class="blockquote-footer text-muted">Juan Pérez</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-secondary">
+                        <div class="card-body">
+                            <p class="card-text text-white">"Me encanta la comunidad y los recursos que ofrecen."</p>
+                            <footer class="blockquote-footer text-muted">María López</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-secondary">
+                        <div class="card-body">
+                            <p class="card-text text-white">"Siempre encuentro lo que busco. ¡Gracias!"</p>
+                            <footer class="blockquote-footer text-muted">Carlos García</footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5 border-secondary">
+    </section>
+
+    <section id="FAQ" class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h2 class="section-title">❓Preguntas Frecuentes (FAQ)</h2>
+            <div class="row">
+                <div class="col ">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item bg-black border-secondary text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-black text-white collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item’s accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It’s also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-black border-secondary text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-black text-white collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item’s accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It’s also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-black border-secondary text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-black text-white collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item’s accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It’s also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5 border-secondary">
+    </section>
+
     <footer class="bg-dark text-light py-4">
-        <div class="container text-center">
-            <p>&copy; 2025 Videojuegos. Todos los derechos reservados.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>🎮 zona gamer</h3>
+                <p>Tu fuente confiable de noticias y reseñas de videojuegos.</p>
+            </div>
+            <div class="col col-md-4">
+                <h3 class="text-light">Navegación</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#news" class="text-light text-decoration-none">Noticias</a></li>
+                    <li><a href="#Reseñas" class="text-light text-decoration-none">Reseñas</a></li>
+                    <li><a href="#top-juegos" class="text-light text-decoration-none">Top Juegos</a></li>
+                    <li><a href="#entrevistas" class="text-light text-decoration-none">Entrevistas</a></li>
+                    <li><a href="#FAQ" class="text-light text-decoration-none">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-light">Redes Sociales</h3>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-tiktok"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <p>&copy; 2025 Zona Gamer. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
